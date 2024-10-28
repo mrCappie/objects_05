@@ -1,8 +1,6 @@
 package ru.netology
 
-import ru.netology.data.Comments
-import ru.netology.data.Likes
-import ru.netology.data.Post
+import ru.netology.data.*
 import ru.netology.service.WallService
 
 fun main() {
@@ -10,13 +8,18 @@ fun main() {
     val likes = Likes(1)
     val comments = Comments(1)
 
+    var attachments: Array<Attachment> = emptyArray()
+    attachments += PhotoAttachment(photo = Photo(1, 1, 1, 1, "аывфаыва", 23523523, 100, 100))
+    attachments += StickerAttachment(sticker = Sticker(1.toString(), 1, 1, true))
+
     var post1 = Post(
         ownerId = 1,
         fromId = 1110,
         date = 1730028987,
         text = "Пост1",
         likes = likes,
-        comments = comments
+        comments = comments,
+
     )
 
     WallService.add(post1)

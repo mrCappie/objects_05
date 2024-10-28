@@ -12,5 +12,6 @@ data class Post(
     val postType: String = "post",
     val canPin: Boolean = true,
     val repost: Post? = null,
-    val donut: Donut? = null
+    val donut: Donut? = null,
+    val attachments: Array<Attachment> = emptyArray()
 )
