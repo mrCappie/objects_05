@@ -10,5 +10,7 @@ data class Post(
     val likes: Likes,
     val comments: Comments,
     val postType: String = "post",
-    val canPin: Boolean = true
+    val canPin: Boolean = true,
+    val repost: Post?,
+    val donut: Donut?
 )
