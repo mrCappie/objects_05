@@ -11,6 +11,6 @@ data class Post(
     val comments: Comments,
     val postType: String = "post",
     val canPin: Boolean = true,
-    val repost: Post?,
-    val donut: Donut?
+    val repost: Post? = null,
+    val donut: Donut? = null
 )
