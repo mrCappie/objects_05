@@ -7,8 +7,8 @@ data class Comment(
     val fromId: Int,
     val date: Date,
     val text: String,
-    val donut: Donut?,
-    val isDon: Boolean,
-    val placeholder: String,
-    val replyToUser: Int
+    val donut: Donut? = null,
+    val isDon: Boolean = false,
+    val placeholder: String = "",
+    val replyToUser: Int = 0
 )
