@@ -52,6 +52,7 @@ object WallService {
 
     fun clear() {
         posts = emptyArray()
+        comments = emptyArray()
         count = 0
     }
 }
